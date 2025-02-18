@@ -11,7 +11,9 @@ class Now < Formula
   def install
     # system "make", "release"
     # For some weird reason, calling `make release` simply won't work...
-    system "bash", "-c", "ldc2 source/now/*.d source/now/*/*.d source/now/*/*/*.d cli/now/cli.d -od=build --oq -O2 -of dist/now"
+    system "bash", "-c", \
+      "ldc2 source/now/*.d source/now/*/*.d source/now/*/*/*.d cli/now/cli.d \
+      -od=build --oq -O2 -of dist/now"
     bin.install "dist/now" => "now"
   end
 
