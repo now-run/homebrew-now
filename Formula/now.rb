@@ -1,7 +1,7 @@
 class Now < Formula
   desc "Your code is ready, Now run"
   homepage "https://nowrun.org"
-  url "https://github.com/now-run/now.git", tag: "v0.31.1"
+  url "https://github.com/now-run/now.git", tag: "v0.32.0"
   license "MIT"
   head "https://github.com/now-run/now.git", branch: "main"
 
